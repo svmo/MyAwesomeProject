@@ -1,0 +1,87 @@
+/* ================================= 
+  Base Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+    color: #AC30D9;
+}
+
+
+h1 {
+    color: #AC30D9;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.main-nav {
+    margin-top: 5px;
+}
+
+.name {
+    border: solid 1px red;
+    margin: 0;
+}
+
+.name a,
+.main-nav a {
+    text-align: center;
+    display: block;
+    padding: 10px 15px;
+}
+
+.main-nav li {
+    font-size: 0.5em;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.name {
+    float: left;
+}
+
+.main-nav {
+    float: right;
+}
+
+.main-nav li {
+    display: inline-block;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+}
